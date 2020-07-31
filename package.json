@@ -1,0 +1,34 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "File rouge first year web developper",
+  "main": "index.js",
+  "scripts": {
+    "toCSS": "node-sass --output-style expanded --source-map=true sass -o css",
+    "concat": "concat --output=css/style.css css/accueil.css css/portfolio.css css/admin.css css/contact.css",
+    "toPrefixed": "postcss css/style.css --use=autoprefixer --map=false --output=css/style.css",
+    "toMinified": "cleancss --level=1 --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "watch": "npm run toCSS -- --watch",
+    "minjs": "uglifyjs js/script.js -o js/script.min.js",
+    "build": "npm run toCSS && npm run concat && npm run toPrefixed && npm run toMinified && npm run minjs && npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mednajjar/My-Portfolio.git"
+  },
+  "author": "Med Najjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mednajjar/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/mednajjar/My-Portfolio#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "clean-css-cli": "^4.3.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "uglify-js": "^3.10.0"
+  }
+}
