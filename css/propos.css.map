@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "propos.css",
+	"sources": [
+		"../sass/propos.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
