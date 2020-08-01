@@ -4,13 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="accueil.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/accueil.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
     <title>Welcome to my portfolio</title>
 </head>
 
-<body>
+<body onload="typeWriter()">
+    <!--------------------------------------------** M E N u **----------------------------------------------->
+    <nav>
+        <div class="logo">
+            <img class="logo__logo" src="/Assets/mylogo2.png" alt="">
+        </div>
 
+        <ul class="navMenu">
+            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a href="about.php">Portfolio</a></li>
+            <li id="act"><a href="#">À propos</a></li>
+            <li><a href="glerie.php">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="burger__line1"></div>
+            <div class="burger__line2"></div>
+            <div class="burger__line3"></div>
+        </div>
+    </nav>
+    <!-----------------------------------** F I N - M E N U **---------------------------------------->
+    <!-------------------------------** H E A D E R - H E R O **-------------------------------------->
+    <div class="blocHeader">
+        <div class="blocHeader__TextHeader">
+            <h1 id="myTitle" class="blocHeader__titleHeader">Bonjour, je suis MOHAMMED NAJJAR,</h1>
+            <div class="blocHeader__paraHeader">
+                <p class="blocHeader__paragraph" id="para">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="blocBtn">
+            <input class="blocBtn__Btn1" type="submit" value="Mes Projets" onclick="location.href='portfolio.php';">
+            <input class="blocBtn__Btn2" type="submit" value="Devis gratuit" onclick="location.href='devis.php';">
+        </div>
+    </div>
+
+    <!---------------------------** F I N - H E A D E R - H E R O **---------------------------------->
+
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

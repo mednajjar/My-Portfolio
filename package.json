@@ -10,7 +10,7 @@
     "toMinified": "cleancss --level=1 --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
     "watch": "npm run toCSS -- --watch",
     "minjs": "uglifyjs js/script.js -o js/script.min.js",
-    "build": "npm run toCSS && npm run concat && npm run toPrefixed && npm run toMinified && npm run minjs && npm run watch"
+    "build": "npm run toCSS && npm run concat && npm run toPrefixed && npm run toMinified && npm run watch"
   },
   "repository": {
     "type": "git",
