@@ -112,36 +112,41 @@ ul li .active {
         height: 100%;
         top: 0;
         background-color: rgba(16, 17, 16, 0.6);
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(-110%);
         transition: transform 0.8s ease-in;
         z-index: 111;
-         & li{
-             margin-top: -18vh;
-             @media screen and(max-width:700px) {
+
+        & li {
+            margin-top: -18vh;
+
+            @media screen and(max-width:700px) {
                 margin-top: -21vh;
             }
+
             @media screen and(max-width:570px) {
                 margin-top: -23vh;
             }
+
             @media screen and(max-width:470px) {
                 margin-top: -25vh;
                 font-size: 1.2vw;
             }
-         }
+        }
 
         & li a {
             font-weight: 400;
+
             @media screen and(max-width:470px) {
-                
+
                 font-size: 3vw;
             }
-            
+
         }
-        
+
     }
 
     .burger {
@@ -305,6 +310,7 @@ span.fade {
     @media screen and(max-width:975px) {
         width: 60%;
     }
+
     @media screen and(max-width:800px) {
         margin-top: 7%;
 
@@ -354,7 +360,7 @@ span.fade {
 
         @media screen and(max-width:1015px) {
             font-size: 2vw;
-            
+
         }
 
         @media screen and(max-width:516px) {
