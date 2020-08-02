@@ -12,6 +12,7 @@ body {
     font-family: nunito, sans-serif;
     background: #292626;
 }
+
 /* --------------------------** M E N U **-----------------------------------*/
 nav {
     width: 90%;
@@ -35,11 +36,12 @@ nav {
 
         & a {
             text-decoration: none;
-            letter-spacing: 1px;
+            letter-spacing: 1.1pt;
             font-weight: bold;
             font-size: 16px;
             font-family: 'poppins';
             color: #DCC5DB;
+            cursor: pointer;
 
             &:hover {
                 text-decoration: underline;
@@ -57,7 +59,7 @@ nav {
     & div {
         width: 40px;
         height: 4px;
-        background-color: black;
+        background-color: white;
         margin: 7px;
         transition: all 0.3s ease;
 
@@ -74,8 +76,11 @@ ul li .active {
         width: 100%;
     }
 
+    nav {
+        margin-top: 3%;
+    }
+
     .navMenu {
-        width: 70%;
 
         & li a {
             font-size: 14px;
@@ -83,7 +88,8 @@ ul li .active {
     }
 
     nav .logo__logo {
-        width: 90%;
+        width: 70%;
+        height: auto;
     }
 }
 
@@ -94,53 +100,48 @@ ul li .active {
         overflow-x: hidden;
     }
 
+    nav {
+        margin-top: 4%;
+    }
+
     .navMenu {
         position: absolute;
-        width: 70%;
+        width: 30%;
         margin: 0 auto;
         left: 0;
-        height: 50vh;
-        top: 20vh;
-        background-color: rgba(79, 85, 82, 0.6);
+        height: 100%;
+        top: 0;
+        background-color: rgba(16, 17, 16, 0.6);
+        
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         transform: translateX(-110%);
         transition: transform 0.8s ease-in;
         z-index: 111;
-
-        @media screen and(max-width:600px) {
-            width: 90%;
-            left: 5%;
-            top: 15vh;
-        }
-
-        @media screen and(max-width:360px) {
-            top: 20vh;
-            height: 50vh;
-
-        }
-
-
-        & li {
-
-            padding-left: 8%;
-
-
-            & a {
-                color: white;
-                font-size: 2vw;
-
-                @media screen and(max-width:360px) {
-                    font-size: 3vw;
-
-                }
+         & li{
+             margin-top: -18vh;
+             @media screen and(max-width:700px) {
+                margin-top: -21vh;
             }
-
-            & a:hover {
-                color: #D0DDD5;
+            @media screen and(max-width:570px) {
+                margin-top: -23vh;
             }
+            @media screen and(max-width:470px) {
+                margin-top: -25vh;
+                font-size: 1.2vw;
+            }
+         }
+
+        & li a {
+            font-weight: 400;
+            @media screen and(max-width:470px) {
+                
+                font-size: 3vw;
+            }
+            
         }
+        
     }
 
     .burger {
@@ -152,10 +153,12 @@ ul li .active {
     }
 
     nav .logo__logo {
-        width: 100%;
+        width: 60%;
+        height: auto;
     }
 
 }
+
 
 
 @keyframes navLinkFade {
@@ -181,71 +184,195 @@ ul li .active {
 .toggle .burger__line3 {
     transform: rotate(45deg) translate(-5px, -10px);
 }
+
 /* ----------------------------** F I N - M E N U **------------------------------- */
 .blocHeader {
+    position: fixed;
+    top: 34%;
     width: 100%;
-    height: 18vw;
-    margin-top: 8%;
+    height: auto;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 70% 25%;
+    grid-template-areas: "A""B""C";
 
-    &__titleHeader{
-        margin-top: 2%;
-        color:  #4672AB;
-        letter-spacing: 1.1pt;
-        
+    @media screen and(max-width:1015px) {
+        top: 30%;
     }
-    &__paraHeader{
-        margin-top: 3%;
+
+
+    &__titleHeader {
+        grid-area: A;
+        color: #4672AB;
+        letter-spacing: 1.1pt;
+
+        @media screen and(max-width:875px) {
+            font-size: 2.5vw;
+
+        }
+
+        @media screen and(max-width:660px) {
+            font-size: 3vw;
+
+        }
+
+        @media screen and(max-width:516px) {
+            font-size: 3.8vw;
+        }
+
+    }
+
+    &__paraHeader {
+        grid-area: B;
+        text-align: center;
+        width: 70%;
+        justify-self: center;
         font-size: 20px;
         color: #E8D7E7;
         font-weight: 500;
         line-height: 2.6rem;
         letter-spacing: 1.1pt;
-    }
-    &__paragraph{
-        height: 12vw;        
+
+        @media screen and(max-width:660px) {
+            line-height: 1.8rem;
+
+        }
+
+        @media screen and(max-width:516px) {
+            width: 80%;
+        }
+
+        @media screen and(max-width:457px) {
+            width: 86%;
+
+        }
+
     }
 
-    &__TextHeader{
-        width: 52%;
-        height: auto;
-        margin: 0 auto;
+    &__paragraph {
+        height: 18vh;
+
+        @media screen and(max-width:875px) {
+            font-size: 1.8vw;
+
+        }
+
+        @media screen and(max-width:660px) {
+            font-size: 2.4vw;
+
+        }
+
+        @media screen and(max-width:516px) {
+            font-size: 3vw;
+        }
+
+        @media screen and(max-width:457px) {
+            font-size: 3.4vw;
+
+        }
+    }
+
+    &__TextHeader {
+
         text-align: center;
-        padding-top: 1%;
+
+
     }
-  }
+}
 
-  span{
-      transition: all 2s ease;
-  }
+span {
+    transition: all 2s ease;
+}
 
-  span.fade{
-      color: #F9F4F4;
-  }
+span.fade {
+    color: #F9F4F4;
+}
 
-  .blocBtn{
-      width: 40%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-evenly;
-   
+.blocBtn {
+    grid-area: C;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
 
-      &__Btn1{
-          width: 40%;
-          padding-top: 2%;
-          padding-bottom: 2%;
-          font-size: 1.2vw;
-          font-weight: 700;
-          border-radius: 8px;
-          border: 2px solid #4672AB;
-          background: none;
-          color: #4672AB;
-          cursor: pointer;
-      }
-      &__Btn1:hover{
+    @media screen and(max-width:1300px) {
+        margin-top: 3%;
+    }
+
+    @media screen and(max-width:975px) {
+        width: 60%;
+    }
+    @media screen and(max-width:800px) {
+        margin-top: 7%;
+
+    }
+
+    @media screen and(max-width:516px) {
+        margin-top: 6%;
+        width: 70%;
+    }
+
+    @media screen and(max-width:457px) {
+        margin-top: 8%;
+    }
+
+    @media screen and(max-width:457px) {
+        width: 80%;
+        margin-top: 12%;
+    }
+
+    @media screen and(max-width:414px) {
+        margin-top: 15%;
+
+    }
+
+    @media screen and(max-width:375px) {
+        margin-top: 19%;
+
+    }
+
+    @media screen and(max-width:320px) {
+        margin-top: 26%;
+
+    }
+
+    &__Btn1 {
+        width: 40%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1.2vw;
+        font-weight: 700;
+        border-radius: 8px;
+        border: 2px solid #4672AB;
+        background: none;
+        color: #4672AB;
+        cursor: pointer;
+        align-self: center;
+
+        @media screen and(max-width:1015px) {
+            font-size: 2vw;
+            
+        }
+
+        @media screen and(max-width:516px) {
+            font-size: 3vw;
+        }
+
+        @media screen and(max-width:457px) {
+            font-size: 3.8vw;
+        }
+
+    }
+
+    &__Btn1:hover {
         background: #4672AB;
         color: #DCC5DB;
-      }
-      &__Btn2{
+    }
+
+    &__Btn2 {
         width: 40%;
         padding-top: 2%;
         padding-bottom: 2%;
@@ -256,9 +383,24 @@ ul li .active {
         background: none;
         color: #707070;
         cursor: pointer;
+        align-self: center;
+
+        @media screen and(max-width:1015px) {
+            font-size: 2vw;
+        }
+
+        @media screen and(max-width:516px) {
+            font-size: 3vw;
+        }
+
+        @media screen and(max-width:457px) {
+            font-size: 3.8vw;
+        }
+
     }
-    &__Btn2:hover{
+
+    &__Btn2:hover {
         background: #707070;
         color: #DCC5DB;
-      }
-  }
+    }
+}

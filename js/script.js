@@ -53,7 +53,7 @@ function complete() {
 }
 // ---------------------------** P A R A G R A P H - A N I M A T I O N **----------------------------------------
 var i = 0;
-var txt = "et je suis un freelancer travailler sur des projets de clients dans certaines agences numériques marocaines et des clients individuels. J'ai un ensemble diversifié de compétences, allant de la conception, au html et css, javascript et php, wordpress et prestashop.";
+var txt = "et je suis un auto-entreproneur travailler sur des projets de clients dans certaines agences numériques marocaines et des clients individuels. J'ai un ensemble diversifié de compétences, allant de la conception, au html et css, javascript et php, wordpress et prestashop.";
 var speed = 50;
 
 function typeWriter(){
