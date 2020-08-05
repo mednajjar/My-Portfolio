@@ -20,9 +20,9 @@
 
         <ul class="navMenu">
             <li><a class="active" href="index.php">Acceuil</a></li>
-            <li><a href="about.php">Portfolio</a></li>
-            <li id="act"><a href="#">À propos</a></li>
-            <li><a href="glerie.php">Contact</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+            <li><a href="propos.php">À propos</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
