@@ -127,22 +127,22 @@
                 
                 <label for="" class="contactForm__labelName"> Nom et prénom :</label>
                 
-                <input type="text" class="contactForm__fname" name="fullname" placeholder="Nom et prénom...">
+                <input type="text" class="contactForm__fname" name="fullname" placeholder="Nom et prénom..." required>
                 <p class="contactForm__alertmsg"><?php if(isset($name_error)) echo $name_error; ?></p>
 
                 <label for="" class="contactForm__labelName">Mail :</label>
 
-                <input type="text" class="contactForm__email" name="email" placeholder="E-mail...">
+                <input type="text" class="contactForm__email" name="email" placeholder="E-mail..." required>
                 <p class="contactForm__alertmsg"><?php if(isset($email_error)) echo $email_error; ?></p>
 
                 <label for="" class="contactForm__labelName">Sujet :</label>
 
-                <input type="text" class="contactForm__sujet" name="sujet" placeholder="Sujet...">
+                <input type="text" class="contactForm__sujet" name="sujet" placeholder="Sujet..." required>
                 <p class="contactForm__alertmsg"><?php if(isset($subject_error)) echo $subject_error; ?></p>
 
                 <label for="" class="contactForm__labelName">Message :</label>
 
-                <textarea class="contactForm__message" name="message" placeholder="Message..."></textarea>
+                <textarea class="contactForm__message" name="message" placeholder="Message..." required></textarea>
                 <p class="contactForm__alertmsg"><?php if(isset($message_error)) echo $message_error; ?></p>
 
                 <input class="contactForm__sendBtn" type="submit" value="Envoyer" name="submit">
