@@ -13,7 +13,7 @@
             $email_error = 'Invalid email';
           }
           if(!preg_match("/^[A-Za-z .'-]+$/", $sujet)){
-            $subject_error = 'Invalid sujet';
+            $subject_error = 'Invalid subjcet';
           }
           if(strlen($msg) === 0){
             $message_error = 'Your message should not be empty';
@@ -63,16 +63,14 @@
          
         if(mail($to,$subject,$message,$headers)&& !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
             // Message if mail has been sent
-            echo "<script>
-                    alert('Mail has been sent Successfully.');
-                </script>";
+            echo $send ='votre message à été envoyé, je vous répondrais dans meilleur délais, merci.';
+              
         }
  
         else{
             // Message if mail has been not sent
-            echo "<script>
-                    alert('Email failed to sent');
-                </script>";
+            echo $notsent='votre message n\'a pas été envoyé veuillez réessayer!';
+              
         }
        
     }
@@ -94,18 +92,18 @@
     <title>Welcome to my portfolio</title>
 </head>
 
-<body onload="typeWriter()">
+<body>
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="/Assets/mylogo2.png" alt="">
+            <img class="logo__logo" src="./Assets/mylogo2.png" alt="">
         </div>
 
         <ul class="navMenu">
-            <li><a href="index.php">Acceuil</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="propos.php">À propos</a></li>
-            <li><a class="active" href="contact.php">Contact</a></li>
+            <li><a href="home">Acceuil</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="propos">À propos</a></li>
+            <li><a class="active" href="contact">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -118,9 +116,10 @@
     <div class="sectionContact">
         <div class="sectionContact__content">
             <h1 class="sectionContact__title">Contact us</h1>
-            <h3 class="sectionContact__paragraphe">Je vous répondrai dans les plus brefs délais</h3>
+            
         </div>
-
+        <p class="contactForm__alertmsg alertMsg"><?php if(isset($send)) echo $send; ?></p>
+        <p class="contactForm__alertmsg alertMsg"><?php if(isset($notsent)) echo $notsent; ?></p>
 
         <div class="formContact">
             <form class="contactForm" action="contact.php" method="POST">
@@ -148,10 +147,37 @@
                 <input class="contactForm__sendBtn" type="submit" value="Envoyer" name="submit">
             </form>
         </div>
+        
     </div>
 
     <!---------------------------** F I N - H E A D E R - H E R O **---------------------------------->
+    <footer>
+        <div class="myfooter">
+            <div class="myfooter__footerContact">
+                <ul>
+                    <li><h2 class="titleContactList">Contact info</h2></li>
+                    <li><div class="listContact"><h4>Tel :</h4><p class="listContact__paraContact">+212606587853</p></div></li>
+                    <li><div class="listContact"><h4>Adress :</h4><p class="listContact__paraContact">Qu Abcd N°09, Youssoufia</p></div></li>
+                    <li><div class="listContact"><h4>E-mail :</h4><p class="listContact__paraContact">Najjarmedd@gmail.com</p></div></li>
+                </ul>
 
+            </div>
+            <div class="myfooter__footerMedia">
+                <ul>
+                    <li><h2 class="titleContactList">Social media</h2></li>
+                    <il><img class="myfooter__mediaIcon" src="./Assets/facebook.png" alt="facebook" onclick="location.href='https://facebook.com'"></il>
+                    <il><img class="myfooter__mediaIcon" src="./Assets/linkedin.png" alt="linkdin" onclick="location.href='https://linkedin.com'"></il>
+                    <il><img class="myfooter__mediaIcon" src="./Assets/twitter.png" alt="twitter" onclick="location.href='https://www.twitter.com'"></il>
+                    <il><img class="myfooter__mediaIcon" src="./Assets/whatsapp.png" alt="whatsapp" onclick="location.href='https://wa.me/0606587853'"></il>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footercopyright">
+                <p>copyright © 2020 - created by Mohammed Najjar</p>
+        </div>
+    </footer>
 
     <script src="/js/script.js"></script>
 </body>

@@ -1,0 +1,11 @@
+Options -indexes
+
+RewriteEngine On
+
+# internal forward from pretty URL to actual one
+
+RewriteRule ^home/?$ index.php [NC,L]
+RewriteRule ^propos/?$ propos.php [NC,L]
+RewriteRule ^portfolio/?$ portfolio.php [NC,L]
+RewriteRule ^contact/?$ contact.php [NC,L]
+

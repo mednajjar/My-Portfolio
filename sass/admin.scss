@@ -1,0 +1,88 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-center {
+    font-size: 2.5vw;
+    @media screen and(min-width:320px) and (max-width:800px) {
+       
+        font-size: 3.3vw;
+        
+    }
+}
+
+.login-form {
+    width: 35%;
+    margin: 15% auto;
+    @media screen and(min-width:320px) and (max-width:800px) {
+       
+        width: 80%;
+        
+    }
+
+}
+
+.form-group {
+    width: 100%;
+
+}
+
+.passforgot {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+.form-control {
+    width: 90%;
+    margin-bottom: 3%;
+    padding: 3%;
+    font-size: 1vw;
+    @media screen and(min-width:320px) and (max-width:800px) {
+       
+        font-size: 3vw;
+        
+    }
+}
+
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 6%;
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+}
+
+.btnLogin {
+    width: 90%;
+    margin-top: 2%;
+    padding: 2.5%;
+    background: #4672AB !important;
+    color: #F9F4F4;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @media screen and(min-width:320px) and (max-width:800px) {
+       
+        font-size: 3vw;
+        
+    }
+}
+
+.btnLogin:active {
+    background: #10833c;
+}
+
+.btnLogin:hover {
+    background: #707070 !important;
+    color: black;
+}
+

@@ -1,0 +1,460 @@
+#bodypropos {
+  background: #fdfdfd;
+}
+
+.proposPage {
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 4%;
+  overflow-x: hidden;
+}
+
+.proposPage__titleTop {
+  text-align: center;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .proposPage__titleTop {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .proposPage__titleTop {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .proposPage__titleTop {
+    font-size: 3.8vw;
+  }
+}
+
+.uploadForm {
+  width: 40%;
+  margin: 1% auto;
+  padding: 1%;
+  background: #F9F4F4;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .uploadForm {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadForm {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadForm__titleUpload {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadForm__titleUpload {
+    font-size: 3.2vw;
+  }
+}
+
+.uploadForm__uploadFile {
+  width: 90%;
+  margin: 1% auto;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .uploadForm__uploadFile {
+    font-size: 2vw;
+  }
+}
+
+.uploadForm__upBtn {
+  width: 150px;
+  padding: 1%;
+  margin: 1% auto;
+  background: #86afec;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .uploadForm__upBtn {
+    font-size: 12px;
+  }
+}
+
+.uploadForm__upBtn:hover {
+  background: royalblue;
+  cursor: pointer;
+  color: white;
+}
+
+.addProposInfo {
+  width: 80%;
+  margin: 3% auto 0%;
+}
+
+.addProposInfo__titleinf {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .addProposInfo__titleinf {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .addProposInfo__titleinf {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .addProposInfo__titleinf {
+    font-size: 3.8vw;
+  }
+}
+
+.uploadInfoForm {
+  width: 60%;
+  height: 20vw;
+  padding: 1%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background: #F9F4F4;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .uploadInfoForm {
+    width: 70%;
+    height: 30vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadInfoForm {
+    width: 86%;
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadInfoForm {
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+.uploadInfoForm__labelName {
+  width: 40%;
+  margin: 1%;
+  font-size: 16px;
+}
+
+.uploadInfoForm__proTitle {
+  width: 40%;
+  margin: 1%;
+  padding: 1%;
+  font-size: 16px;
+  border: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadInfoForm__proTitle {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadInfoForm__proTitle {
+    width: 80%;
+  }
+}
+
+.uploadInfoForm__description {
+  width: 98%;
+  height: 15vh;
+  margin: 1% auto 2%;
+  padding: 1%;
+  font-size: 16px;
+  border: none;
+}
+
+.uploadInfoForm__addBtn {
+  width: 26%;
+  padding: 1%;
+  margin: 0 auto;
+  background: #86afec;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.uploadInfoForm__addBtn:hover {
+  background: royalblue;
+  cursor: pointer;
+  color: white;
+}
+
+.blocImgPropos {
+  width: 80%;
+  margin: auto;
+}
+
+.blocImgPropos__headerTitle {
+  margin: 2%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .blocImgPropos__headerTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .blocImgPropos__headerTitle {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .blocImgPropos__headerTitle {
+    font-size: 3.8vw;
+  }
+}
+
+.blocImgPropos__imageHeader {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .blocImgPropos__imageHeader {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .blocImgPropos__imageHeader {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .blocImgPropos__imageHeader {
+    width: 90%;
+  }
+}
+
+.blocImgPropos__headerImg {
+  width: 100%;
+}
+
+#proposForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form2 {
+  overflow-x: scroll;
+}
+
+#proposTable {
+  width: 50%;
+  margin: 3% auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #proposTable {
+    width: 64%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  #proposTable {
+    width: 100%;
+  }
+}
+
+.dataPropos {
+  width: 100%;
+}
+
+.dataPropos__titlePropos {
+  text-align: center;
+  margin: 4% 0% 0%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .dataPropos__titlePropos {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .dataPropos__titlePropos {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .dataPropos__titlePropos {
+    font-size: 3.8vw;
+  }
+}
+
+.dataPropos__deleteBtn {
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+  background: rgba(255, 0, 0, 0.466);
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.dataPropos__deleteBtn:hover {
+  background: red;
+  cursor: pointer;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+td:last-child {
+  width: 10%;
+}
+
+#proposTable2 {
+  width: 90%;
+  margin: 2% auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  #proposTable2 {
+    width: 100%;
+  }
+}
+
+.labelBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelBtns a {
+  text-decoration: none;
+  color: black;
+}
+
+.btnFrm {
+  width: 100%;
+  margin: 2%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.colorRed {
+  background: rgba(255, 0, 0, 0.466);
+}
+
+.colorRed:hover {
+  background: red;
+}
+
+.colorBlue {
+  background: rgba(85, 85, 243, 0.479);
+}
+
+.colorBlue:hover {
+  background: #5555f3;
+}
+
+.btnFrm:hover {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  background: #86afec;
+  margin-top: 0;
+}
+
+.navbar ul {
+  width: 40%;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .navbar ul {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .navbar ul {
+    width: 90%;
+  }
+}
+
+.navbar ul il {
+  margin: 0% 3%;
+}
+
+.navbar ul il a {
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .navbar ul il a {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .navbar ul il a {
+    font-size: 3vw;
+  }
+}
+
+.navbar ul il a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=propospage.css.map */

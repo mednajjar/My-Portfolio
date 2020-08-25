@@ -1,2 +1,104 @@
+.sectionPropos {
+  width: 100%;
+  margin-top: 8%;
+  padding-bottom: 6%;
+  color: #DCC5DB;
+}
+
+.sectionPropos__titlePortfolio {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 3.4vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 4.6vw;
+  }
+}
+
+.sectionPropos__image {
+  width: 70%;
+  margin: 3% auto 0%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .sectionPropos__image {
+    width: 84%;
+  }
+}
+
+.sectionPropos__image img {
+  width: 100%;
+}
+
+.sectionPropos__description {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .sectionPropos__description {
+    width: 100%;
+  }
+}
+
+.sectionPropos__titledesc {
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__titledesc {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__titledesc {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__titledesc {
+    font-size: 4.2vw;
+  }
+}
+
+.sectionPropos__myDescription {
+  text-align: justify;
+  padding: 2% 16%;
+  font-size: 18px;
+  letter-spacing: 1pt;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__myDescription {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__myDescription {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__myDescription {
+    font-size: 3.8vw;
+  }
+}
 
 /*# sourceMappingURL=propos.css.map */

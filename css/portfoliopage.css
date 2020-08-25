@@ -1,0 +1,250 @@
+.portfolioPage {
+  width: 100%;
+  padding-bottom: 8%;
+}
+
+.portfolioPage__titleTop {
+  margin-top: 6%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .portfolioPage__titleTop {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .portfolioPage__titleTop {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .portfolioPage__titleTop {
+    font-size: 3.8vw;
+  }
+}
+
+.formPortfolio {
+  width: 50%;
+  height: 37vw;
+  margin: 4% auto;
+  border: 1px solid black;
+  margin-bottom: 4%;
+  font-size: .9vw;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formPortfolio {
+    width: 70%;
+    height: 50vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .formPortfolio {
+    width: 82%;
+    height: 56vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .formPortfolio {
+    width: 96%;
+    height: 65vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .formPortfolio {
+    width: 96%;
+    height: 94vw;
+  }
+}
+
+.formPortfolio__alertRecep {
+  text-align: center;
+  color: red;
+}
+
+.formPortfolio__titleUpload {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 14px;
+}
+
+.projectForm {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+
+.projectForm__uploadFile {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+
+.projectForm__labelName {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0% 1% 0%;
+  font-size: 14px;
+  letter-spacing: .7pt;
+}
+
+.projectForm__proTitle {
+  width: 40%;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__proTitle {
+    width: 60%;
+  }
+}
+
+.projectForm__proUrl {
+  width: 40%;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__proUrl {
+    width: 60%;
+  }
+}
+
+.projectForm__description {
+  height: 10vw;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__description {
+    height: 20vw;
+  }
+}
+
+.projectForm__sendBtn {
+  width: 20%;
+  margin: 5% auto;
+  padding: 1%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  letter-spacing: .7pt;
+}
+
+.projectForm__sendBtn:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.sendBtnUpd {
+  margin-top: 2%;
+}
+
+.alertMsg {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dataPortfolio {
+  width: 100%;
+}
+
+.titlePortfolio {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .titlePortfolio {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .titlePortfolio {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .titlePortfolio {
+    font-size: 3.8vw;
+  }
+}
+
+.form1 {
+  overflow-x: scroll;
+}
+
+.portfolioTable {
+  width: 100%;
+  margin: 3% auto;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+th .selAllClmn {
+  display: flex;
+  flex-direction: column;
+}
+
+th .selAllClmn__chekAll {
+  text-align: center;
+  margin: auto;
+}
+
+.blocbtns {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blocbtns__btnFrm {
+  width: 20%;
+  padding: 1%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blocbtns__btnFrm:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+/*# sourceMappingURL=portfoliopage.css.map */

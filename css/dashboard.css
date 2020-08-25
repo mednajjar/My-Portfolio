@@ -1,0 +1,113 @@
+.divLogOut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.logOut {
+  width: 10%;
+  border: none;
+  border-radius: 4px;
+  padding: 1%;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  margin-left: 2%;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .logOut {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .logOut {
+    width: 26%;
+    font-size: 3.2vw;
+  }
+}
+
+.logOut:hover {
+  color: white;
+  background: #5959c0;
+}
+
+.dash-title {
+  color: #F9F4F4;
+  text-align: center;
+  margin-top: 6%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .dash-title {
+    font-size: 3.4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .dash-title {
+    font-size: 4vw;
+    margin-top: 8%;
+  }
+}
+
+.carte {
+  width: 80%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .carte__titleCart {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte__titleCart {
+    font-size: 4vw;
+  }
+}
+
+.carte__mycarte {
+  width: 30%;
+  text-align: center;
+  background: #F9F4F4;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte__mycarte {
+    width: 50%;
+    margin: 3%;
+  }
+}
+
+.carte__mycarte:hover {
+  background: rgba(152, 142, 172, 0.6);
+  color: #F9F4F4;
+}
+
+.carte__myImage {
+  width: 50%;
+  margin-top: 5%;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

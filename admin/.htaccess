@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# internal forward from pretty URL to actual one
+RewriteRule ^login/?$ admin.php [NC,L]
+RewriteRule ^Dashboard/?$ dashboard.php [NC,L]
+RewriteRule ^About/?$ propospage.php [NC,L]
+RewriteRule ^Portfolio/?$ portfoliopage.php [NC,L]
+RewriteRule ^mailbox/?$ mailbox.php [NC,L]
+RewriteRule ^forgot/?$ forgot.php [NC,L]
+

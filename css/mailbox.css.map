@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "mailbox.css",
+	"sources": [
+		"../sass/mailbox.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,OAAO;CAKlB;;AAHI,AAAD,gBAAS,CAAC;EACN,KAAK,EAAE,IAAI;CACd"
+}

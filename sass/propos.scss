@@ -1,0 +1,72 @@
+.sectionPropos {
+    width: 100%;
+    margin-top: 8%;
+    padding-bottom: 6%;
+    color: #DCC5DB;
+
+    &__titlePortfolio {
+        text-align: center;
+        @media screen and(min-width:600px) and (max-width:999px) {
+            font-size: 3.4vw;
+        }
+        @media screen and(min-width:450px) and (max-width:599px) {
+            font-size: 4vw;
+        }
+        @media screen and(min-width:320px) and (max-width:449px) {
+            font-size: 4.6vw;
+        }
+    }
+
+    &__image {
+        width: 70%;
+        margin: 3% auto 0%;
+        @media screen and(min-width:320px) and (max-width:999px) {
+            width: 84%;
+        }
+    }
+
+    &__image img {
+        width: 100%;
+
+    }
+
+    &__description {
+        width: 80%;
+        margin: auto;
+        @media screen and(min-width:320px) and (max-width:999px) {
+            width: 100%;
+        }
+    }
+
+    &__titledesc {
+        text-align: center;
+        margin-top: 2%;
+        @media screen and(min-width:600px) and (max-width:999px) {
+            font-size: 3vw;
+        }
+        @media screen and(min-width:450px) and (max-width:599px) {
+            font-size: 3.6vw;
+        }
+        @media screen and(min-width:320px) and (max-width:449px) {
+            font-size: 4.2vw;
+        }
+    }
+
+    &__myDescription {
+        text-align: justify;
+        padding: 2% 16%;
+        font-size: 18px;
+        letter-spacing: 1pt;
+        @media screen and(min-width:600px) and (max-width:999px) {
+            font-size: 2.4vw;
+        }
+        @media screen and(min-width:450px) and (max-width:599px) {
+            font-size: 3vw;
+        }
+        @media screen and(min-width:320px) and (max-width:449px) {
+            font-size: 3.8vw;
+        }
+    }
+
+
+}

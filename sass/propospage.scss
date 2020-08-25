@@ -1,0 +1,443 @@
+// ----------------------** propos page admin **----------------------
+#bodypropos {
+    background: #fdfdfd;
+
+}
+
+.proposPage {
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 4%;
+    overflow-x: hidden;
+
+    &__titleTop {
+        text-align: center;
+        margin-top: 3%;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            font-size: 2.5vw;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.8vw;
+        }
+    }
+}
+
+.uploadForm {
+    width: 40%;
+    margin: 1% auto;
+    padding: 1%;
+    background: #F9F4F4;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+
+    @media screen and (min-width:500px) and (max-width:800px) {
+
+        width: 60%;
+    }
+
+    @media screen and (min-width:320px) and (max-width:499px) {
+
+        width: 90%;
+    }
+
+    &__titleUpload {
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 2.4vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.2vw;
+        }
+    }
+
+
+    &__uploadFile {
+        width: 90%;
+        margin: 1% auto;
+        padding: 1%;
+        border: 1px solid black;
+        border-radius: 4px;
+
+        @media screen and (min-width:600px) and (max-width:1300px) {
+
+            font-size: 2vw;
+        }
+    }
+
+    &__upBtn {
+        width: 150px;
+        padding: 1%;
+        margin: 1% auto;
+        background: #86afec;
+        border: 1px solid black;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 4px;
+
+        @media screen and (min-width:320px) and (max-width:599px) {
+
+            font-size: 12px;
+        }
+
+    }
+
+    &__upBtn:hover {
+        background: royalblue;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.addProposInfo {
+    width: 80%;
+    margin: 3% auto 0%;
+
+    &__titleinf {
+        text-align: center;
+        margin-bottom: 3%;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            font-size: 2.5vw;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.8vw;
+        }
+    }
+}
+
+.uploadInfoForm {
+    width: 60%;
+    height: 20vw;
+    padding: 1%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background: #F9F4F4;
+    border-radius: 8px;
+
+    @media screen and (min-width:800px) and (max-width:1300px) {
+
+        width: 70%;
+        height: 30vw;
+    }
+
+    @media screen and (min-width:500px) and (max-width:799px) {
+
+        width: 86%;
+        height: 40vw;
+    }
+
+    @media screen and (min-width:320px) and (max-width:499px) {
+
+        width: 100%;
+        height: 60vw;
+    }
+
+    &__labelName {
+        width: 40%;
+        margin: 1%;
+        font-size: 16px;
+
+    }
+
+    &__proTitle {
+        width: 40%;
+        margin: 1%;
+        padding: 1%;
+        font-size: 16px;
+        border: none;
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            width: 60%;
+
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            width: 80%;
+
+        }
+    }
+
+    &__description {
+        width: 98%;
+        height: 15vh;
+        margin: 1% auto 2%;
+        padding: 1%;
+        font-size: 16px;
+        border: none;
+
+    }
+
+    &__addBtn {
+        width: 26%;
+        padding: 1%;
+        margin: 0 auto;
+        background: #86afec;
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__addBtn:hover {
+        background: royalblue;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.blocImgPropos {
+    width: 80%;
+    margin: auto;
+
+    &__headerTitle {
+        margin: 2%;
+        text-align: center;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            font-size: 2.5vw;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.8vw;
+        }
+    }
+
+    &__imageHeader {
+        width: 40%;
+        margin: 0 auto;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            width: 60%;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            width: 80%;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            width: 90%;
+        }
+    }
+
+    &__headerImg {
+        width: 100%;
+    }
+}
+
+#proposForm {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form2 {
+    overflow-x: scroll;
+}
+
+#proposTable {
+    width: 50%;
+    margin: 3% auto;
+
+    @media screen and (min-width:600px) and (max-width:800px) {
+        width: 64%;
+    }
+
+    @media screen and (min-width:320px) and (max-width:599px) {
+        width: 100%;
+    }
+}
+
+.dataPropos {
+    width: 100%;
+
+
+    &__titlePropos {
+        text-align: center;
+        margin: 4% 0% 0%;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            font-size: 2.5vw;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.8vw;
+        }
+
+
+    }
+
+    &__deleteBtn {
+        width: 100%;
+        padding: 2%;
+        text-decoration: none;
+        background: rgba(255, 0, 0, 0.466);
+        border: 1px solid black;
+        border-radius: 2px;
+
+
+
+    }
+
+
+    &__deleteBtn:hover {
+        background: rgb(255, 0, 0);
+        cursor: pointer;
+        color: white;
+    }
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+
+}
+
+td:last-child {
+    width: 10%;
+}
+
+#proposTable2 {
+    width: 90%;
+    margin: 2% auto;
+
+    @media screen and (min-width:320px) and (max-width:499px) {
+
+        width: 100%;
+    }
+}
+
+
+.labelBtns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.btnFrm {
+    width: 100%;
+    margin: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.colorRed {
+    background: rgba(255, 0, 0, 0.466);
+}
+
+.colorRed:hover {
+    background: rgb(255, 0, 0);
+}
+
+.colorBlue {
+    background: rgba(85, 85, 243, 0.479);
+}
+
+.colorBlue:hover {
+    background: rgb(85, 85, 243);
+}
+
+.btnFrm:hover {
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    background: #86afec;
+    margin-top: 0;
+
+    & ul {
+        width: 40%;
+        text-align: center;
+
+        @media screen and (min-width:600px) and (max-width:1300px) {
+            width: 80%;
+
+        }
+
+        @media screen and (min-width:320px) and (max-width:599px) {
+
+            width: 90%;
+        }
+    }
+
+    & ul il {
+        margin: 0% 3%;
+    }
+
+    & ul il a {
+        text-decoration: none;
+        font-size: 1vw;
+
+        @media screen and (min-width:600px) and (max-width:1300px) {
+
+            font-size: 1.8vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:599px) {
+
+            font-size: 3vw;
+        }
+    }
+
+    & ul il a:hover {
+        text-decoration: underline;
+
+    }
+}

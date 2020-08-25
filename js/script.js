@@ -40,7 +40,7 @@ function onTick() {
     const span = text.querySelectorAll('span')[char];
     span.classList.add('fade');
     char++
-    
+
     if (char == splitText.length) {
         complete();
         return;
@@ -56,10 +56,14 @@ var i = 0;
 var txt = "et je suis un auto-entreproneur travailler sur des projets de clients dans certaines agences numériques marocaines et des clients individuels. J'ai un ensemble diversifié de compétences, allant de la conception, au html et css, javascript et php, wordpress et prestashop.";
 var speed = 50;
 
-function typeWriter(){
-    if(i < txt.length){
+function typeWriter() {
+    if (i < txt.length) {
         document.getElementById("para").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
 }
+// --------------------------------------------------------------------------------------------------------------
+
+
+

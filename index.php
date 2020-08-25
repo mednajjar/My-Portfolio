@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/accueil.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css"> 
     <link rel="icon" href="Assets/favicon.png" sizes="16x16" type="image/png">
     <title>Welcome to my portfolio</title>
 </head>
@@ -15,14 +15,14 @@
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="/Assets/mylogo2.png" alt="">
+            <img class="logo__logo" src="./Assets/mylogo2.png" alt="">
         </div>
 
         <ul class="navMenu">
-            <li><a class="active" href="index.php">Acceuil</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="propos.php">À propos</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a class="active" href="home">Acceuil</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="propos">À propos</a></li>
+            <li><a href="contact">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -41,15 +41,15 @@
         </div>
 
         <div class="blocBtn">
-            <input class="blocBtn__Btn1" type="submit" value="Mes Projets" onclick="location.href='portfolio.php';">
-            <input class="blocBtn__Btn2" type="submit" value="Devis gratuit" onclick="location.href='devis.php';">
+            <input class="blocBtn__Btn1" type="submit" value="Mes Projets" onclick="location.href='portfolio';">
+            <input class="blocBtn__Btn2" type="submit" value="Devis gratuit" onclick="location.href='contact';">
         </div>
     </div>
 
     <!---------------------------** F I N - H E A D E R - H E R O **---------------------------------->
+    
 
-
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

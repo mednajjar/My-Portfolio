@@ -190,7 +190,7 @@ ul li .active {
   position: fixed;
   top: 34%;
   width: 100%;
-  height: auto;
+  height: 38vh;
   padding-top: 3%;
   display: grid;
   grid-template-columns: 1fr;
@@ -231,13 +231,19 @@ ul li .active {
 .blocHeader__paraHeader {
   grid-area: B;
   text-align: center;
-  width: 70%;
+  width: 60%;
   justify-self: center;
   font-size: 20px;
   color: #E8D7E7;
   font-weight: 500;
   line-height: 2.6rem;
   letter-spacing: 1.1pt;
+}
+
+@media screen and (max-width: 965px) and (min-width: 876px) {
+  .blocHeader__paraHeader {
+    width: 68%;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -305,7 +311,6 @@ span.fade {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 2%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -437,9 +442,373 @@ span.fade {
   background: #707070;
   color: #DCC5DB;
 }
+.sectionPortfolio {
+  width: 100%;
+  margin-top: 8%;
+  padding-bottom: 6%;
+}
+
+.sectionPortfolio__title {
+  text-align: center;
+  color: #DCC5DB;
+}
+
+.blocproject {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .blocproject {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .blocproject {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .blocproject {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.myGrid {
+  width: 100%;
+  margin: 5% auto;
+  color: #DCC5DB;
+}
+
+.imgProjet {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .imgProjet {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 3%;
+  }
+}
+
+.imgProjet__image {
+  width: 60%;
+}
+
+.informationProjet {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .informationProjet {
+    width: 90%;
+    margin-bottom: 4%;
+  }
+}
+
+.informationProjet__titleSite {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .informationProjet__titleSite {
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .informationProjet__titleSite {
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 659px) {
+  .informationProjet__titleSite {
+    font-size: 3.8vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  .informationProjet__titleSite {
+    font-size: 4.4vw;
+  }
+}
+
+.informationProjet__titleSite a {
+  text-decoration: none;
+  color: #DCC5DB;
+}
+
+.informationProjet__titleSite a:hover {
+  color: #4672AB;
+}
+
+.informationProjet__description {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1pt;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .informationProjet__description {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .informationProjet__description {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 659px) {
+  .informationProjet__description {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  .informationProjet__description {
+    font-size: 3.8vw;
+  }
+}
+
+.myfooter {
+  width: 100%;
+  height: 15vw;
+  margin: 0;
+  padding: 0;
+  background: rgba(24, 23, 23, 0.404);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: #DCC5DB;
+  align-items: center;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1300px) {
+  .myfooter {
+    height: 25vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 769px) {
+  .myfooter {
+    height: 35vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 659px) {
+  .myfooter {
+    flex-direction: column;
+    height: 60vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter {
+    flex-direction: column;
+    height: 76vw;
+    justify-content: center;
+  }
+}
+
+.myfooter__footerContact {
+  width: 30%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter__footerContact {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+}
+
+.myfooter__footerContact ul li {
+  list-style: none;
+  padding: 1%;
+}
+
+.myfooter__footerMedia {
+  width: 30%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter__footerMedia {
+    width: 80%;
+  }
+}
+
+.myfooter__footerMedia ul li {
+  padding: 4%;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter .titleContactList {
+    font-size: 5vw;
+  }
+}
+
+.myfooter ul li .listContact__paraContact {
+  margin-left: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter ul li .listContact__paraContact {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter ul li .listContact {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter ul li .listContact {
+    font-size: 4.3vw;
+  }
+}
+
+.myfooter__mediaIcon {
+  width: 10%;
+  margin: 4% 4% 4% 0%;
+  cursor: pointer;
+}
+
+.myfooter__mediaIcon:hover {
+  transition: transform 1s;
+  width: 14%;
+  height: auto;
+}
+
+.footercopyright {
+  width: 100%;
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-center {
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .text-center {
+    font-size: 3.3vw;
+  }
+}
+
+.login-form {
+  width: 35%;
+  margin: 15% auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .login-form {
+    width: 80%;
+  }
+}
+
+.form-group {
+  width: 100%;
+}
+
+.passforgot {
+  width: 100%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.form-control {
+  width: 90%;
+  margin-bottom: 3%;
+  padding: 3%;
+  font-size: 1vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .form-control {
+    font-size: 3vw;
+  }
+}
+
+.login-form form {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  padding: 6%;
+}
+
+.login-form h2 {
+  margin: 0 0 15px;
+}
+
+.btnLogin {
+  width: 90%;
+  margin-top: 2%;
+  padding: 2.5%;
+  background: #4672AB !important;
+  color: #F9F4F4;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .btnLogin {
+    font-size: 3vw;
+  }
+}
+
+.btnLogin:active {
+  background: #10833c;
+}
+
+.btnLogin:hover {
+  background: #707070 !important;
+  color: black;
+}
 .sectionContact {
   width: 100%;
   height: auto;
+  padding-bottom: 6%;
 }
 
 .sectionContact__content {
@@ -468,7 +837,35 @@ span.fade {
   margin-bottom: 4%;
   border-radius: 25px;
   font-size: .9vw;
-  border: 4px solid #DCC5DB;
+  border: 1px solid #DCC5DB;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formContact {
+    width: 60%;
+    height: 42vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .formContact {
+    width: 70%;
+    height: 64vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .formContact {
+    width: 90%;
+    height: 80vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .formContact {
+    width: 90%;
+    height: 92vw;
+  }
 }
 
 .contactForm {
@@ -486,6 +883,18 @@ span.fade {
   font-weight: 700;
   margin: 3% 0% 1% 0%;
   letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__labelName {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .contactForm__labelName {
+    font-size: 2.8vw;
+  }
 }
 
 .contactForm__para {
@@ -506,14 +915,26 @@ span.fade {
   letter-spacing: .7pt;
 }
 
-.contactForm__lname {
-  width: 40%;
-  padding: 1%;
-  border-radius: 4px;
-  border: none;
-  font-size: .8vw;
-  background: #f5f2f2;
-  letter-spacing: .7pt;
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__fname {
+    width: 50%;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .contactForm__fname {
+    font-size: 2.8vw;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .contactForm__fname {
+    font-size: 3vw;
+    height: 3.5vh;
+    width: 60%;
+  }
 }
 
 .contactForm__email {
@@ -526,6 +947,28 @@ span.fade {
   letter-spacing: .7pt;
 }
 
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__email {
+    width: 70%;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .contactForm__email {
+    font-size: 2.8vw;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .contactForm__email {
+    font-size: 3vw;
+    height: 3.5vh;
+    width: 70%;
+  }
+}
+
 .contactForm__sujet {
   width: 40%;
   padding: 1%;
@@ -534,6 +977,28 @@ span.fade {
   font-size: .8vw;
   background: #f5f2f2;
   letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__sujet {
+    width: 50%;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .contactForm__sujet {
+    font-size: 2.8vw;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .contactForm__sujet {
+    font-size: 3vw;
+    height: 3.5vh;
+    width: 50%;
+  }
 }
 
 .contactForm__message {
@@ -546,6 +1011,27 @@ span.fade {
   letter-spacing: .7pt;
 }
 
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__message {
+    height: 15vw;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .contactForm__message {
+    font-size: 2.8vw;
+    height: 15vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .contactForm__message {
+    font-size: 3vw;
+    height: 20vw;
+  }
+}
+
 .contactForm__sendBtn {
   width: 20%;
   margin: 8% auto;
@@ -554,14 +1040,1053 @@ span.fade {
   font-size: .9vw;
   font-weight: 700;
   background: none;
-  border: 2px solid #F8EFF7;
+  border: 1px solid #F8EFF7;
   color: white;
   cursor: pointer;
   letter-spacing: .7pt;
 }
 
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .contactForm__sendBtn {
+    font-size: 2vw;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .contactForm__sendBtn {
+    font-size: 2.8vw;
+    border-radius: 2px;
+  }
+}
+
 .contactForm__sendBtn:hover {
   color: #292626;
   background: #F8EFF7;
+}
+
+.alertMsg {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sectionPropos {
+  width: 100%;
+  margin-top: 8%;
+  padding-bottom: 6%;
+  color: #DCC5DB;
+}
+
+.sectionPropos__titlePortfolio {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 3.4vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__titlePortfolio {
+    font-size: 4.6vw;
+  }
+}
+
+.sectionPropos__image {
+  width: 70%;
+  margin: 3% auto 0%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .sectionPropos__image {
+    width: 84%;
+  }
+}
+
+.sectionPropos__image img {
+  width: 100%;
+}
+
+.sectionPropos__description {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .sectionPropos__description {
+    width: 100%;
+  }
+}
+
+.sectionPropos__titledesc {
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__titledesc {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__titledesc {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__titledesc {
+    font-size: 4.2vw;
+  }
+}
+
+.sectionPropos__myDescription {
+  text-align: justify;
+  padding: 2% 16%;
+  font-size: 18px;
+  letter-spacing: 1pt;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .sectionPropos__myDescription {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .sectionPropos__myDescription {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+  .sectionPropos__myDescription {
+    font-size: 3.8vw;
+  }
+}
+.divLogOut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.logOut {
+  width: 10%;
+  border: none;
+  border-radius: 4px;
+  padding: 1%;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  margin-left: 2%;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .logOut {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .logOut {
+    width: 26%;
+    font-size: 3.2vw;
+  }
+}
+
+.logOut:hover {
+  color: white;
+  background: #5959c0;
+}
+
+.dash-title {
+  color: #F9F4F4;
+  text-align: center;
+  margin-top: 6%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .dash-title {
+    font-size: 3.4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .dash-title {
+    font-size: 4vw;
+    margin-top: 8%;
+  }
+}
+
+.carte {
+  width: 80%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .carte__titleCart {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte__titleCart {
+    font-size: 4vw;
+  }
+}
+
+.carte__mycarte {
+  width: 30%;
+  text-align: center;
+  background: #F9F4F4;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .carte__mycarte {
+    width: 50%;
+    margin: 3%;
+  }
+}
+
+.carte__mycarte:hover {
+  background: rgba(152, 142, 172, 0.6);
+  color: #F9F4F4;
+}
+
+.carte__myImage {
+  width: 50%;
+  margin-top: 5%;
+}
+.portfolioPage {
+  width: 100%;
+  padding-bottom: 8%;
+}
+
+.portfolioPage__titleTop {
+  margin-top: 6%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .portfolioPage__titleTop {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .portfolioPage__titleTop {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .portfolioPage__titleTop {
+    font-size: 3.8vw;
+  }
+}
+
+.formPortfolio {
+  width: 50%;
+  height: 37vw;
+  margin: 4% auto;
+  border: 1px solid black;
+  margin-bottom: 4%;
+  font-size: .9vw;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formPortfolio {
+    width: 70%;
+    height: 50vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .formPortfolio {
+    width: 82%;
+    height: 56vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .formPortfolio {
+    width: 96%;
+    height: 65vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .formPortfolio {
+    width: 96%;
+    height: 94vw;
+  }
+}
+
+.formPortfolio__alertRecep {
+  text-align: center;
+  color: red;
+}
+
+.formPortfolio__titleUpload {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 14px;
+}
+
+.projectForm {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+
+.projectForm__uploadFile {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+
+.projectForm__labelName {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0% 1% 0%;
+  font-size: 14px;
+  letter-spacing: .7pt;
+}
+
+.projectForm__proTitle {
+  width: 40%;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__proTitle {
+    width: 60%;
+  }
+}
+
+.projectForm__proUrl {
+  width: 40%;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__proUrl {
+    width: 60%;
+  }
+}
+
+.projectForm__description {
+  height: 10vw;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .projectForm__description {
+    height: 20vw;
+  }
+}
+
+.projectForm__sendBtn {
+  width: 20%;
+  margin: 5% auto;
+  padding: 1%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  letter-spacing: .7pt;
+}
+
+.projectForm__sendBtn:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.sendBtnUpd {
+  margin-top: 2%;
+}
+
+.alertMsg {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dataPortfolio {
+  width: 100%;
+}
+
+.titlePortfolio {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .titlePortfolio {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .titlePortfolio {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .titlePortfolio {
+    font-size: 3.8vw;
+  }
+}
+
+.form1 {
+  overflow-x: scroll;
+}
+
+.portfolioTable {
+  width: 100%;
+  margin: 3% auto;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+th .selAllClmn {
+  display: flex;
+  flex-direction: column;
+}
+
+th .selAllClmn__chekAll {
+  text-align: center;
+  margin: auto;
+}
+
+.blocbtns {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blocbtns__btnFrm {
+  width: 20%;
+  padding: 1%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blocbtns__btnFrm:hover {
+  color: white;
+  background: #6a6ae4;
+}
+#bodypropos {
+  background: #fdfdfd;
+}
+
+.proposPage {
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 4%;
+  overflow-x: hidden;
+}
+
+.proposPage__titleTop {
+  text-align: center;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .proposPage__titleTop {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .proposPage__titleTop {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .proposPage__titleTop {
+    font-size: 3.8vw;
+  }
+}
+
+.uploadForm {
+  width: 40%;
+  margin: 1% auto;
+  padding: 1%;
+  background: #F9F4F4;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .uploadForm {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadForm {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadForm__titleUpload {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadForm__titleUpload {
+    font-size: 3.2vw;
+  }
+}
+
+.uploadForm__uploadFile {
+  width: 90%;
+  margin: 1% auto;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .uploadForm__uploadFile {
+    font-size: 2vw;
+  }
+}
+
+.uploadForm__upBtn {
+  width: 150px;
+  padding: 1%;
+  margin: 1% auto;
+  background: #86afec;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .uploadForm__upBtn {
+    font-size: 12px;
+  }
+}
+
+.uploadForm__upBtn:hover {
+  background: royalblue;
+  cursor: pointer;
+  color: white;
+}
+
+.addProposInfo {
+  width: 80%;
+  margin: 3% auto 0%;
+}
+
+.addProposInfo__titleinf {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .addProposInfo__titleinf {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .addProposInfo__titleinf {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .addProposInfo__titleinf {
+    font-size: 3.8vw;
+  }
+}
+
+.uploadInfoForm {
+  width: 60%;
+  height: 20vw;
+  padding: 1%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background: #F9F4F4;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .uploadInfoForm {
+    width: 70%;
+    height: 30vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadInfoForm {
+    width: 86%;
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadInfoForm {
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+.uploadInfoForm__labelName {
+  width: 40%;
+  margin: 1%;
+  font-size: 16px;
+}
+
+.uploadInfoForm__proTitle {
+  width: 40%;
+  margin: 1%;
+  padding: 1%;
+  font-size: 16px;
+  border: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .uploadInfoForm__proTitle {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .uploadInfoForm__proTitle {
+    width: 80%;
+  }
+}
+
+.uploadInfoForm__description {
+  width: 98%;
+  height: 15vh;
+  margin: 1% auto 2%;
+  padding: 1%;
+  font-size: 16px;
+  border: none;
+}
+
+.uploadInfoForm__addBtn {
+  width: 26%;
+  padding: 1%;
+  margin: 0 auto;
+  background: #86afec;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.uploadInfoForm__addBtn:hover {
+  background: royalblue;
+  cursor: pointer;
+  color: white;
+}
+
+.blocImgPropos {
+  width: 80%;
+  margin: auto;
+}
+
+.blocImgPropos__headerTitle {
+  margin: 2%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .blocImgPropos__headerTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .blocImgPropos__headerTitle {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .blocImgPropos__headerTitle {
+    font-size: 3.8vw;
+  }
+}
+
+.blocImgPropos__imageHeader {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .blocImgPropos__imageHeader {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .blocImgPropos__imageHeader {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .blocImgPropos__imageHeader {
+    width: 90%;
+  }
+}
+
+.blocImgPropos__headerImg {
+  width: 100%;
+}
+
+#proposForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form2 {
+  overflow-x: scroll;
+}
+
+#proposTable {
+  width: 50%;
+  margin: 3% auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #proposTable {
+    width: 64%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  #proposTable {
+    width: 100%;
+  }
+}
+
+.dataPropos {
+  width: 100%;
+}
+
+.dataPropos__titlePropos {
+  text-align: center;
+  margin: 4% 0% 0%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .dataPropos__titlePropos {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .dataPropos__titlePropos {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .dataPropos__titlePropos {
+    font-size: 3.8vw;
+  }
+}
+
+.dataPropos__deleteBtn {
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+  background: rgba(255, 0, 0, 0.466);
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.dataPropos__deleteBtn:hover {
+  background: red;
+  cursor: pointer;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+td:last-child {
+  width: 10%;
+}
+
+#proposTable2 {
+  width: 90%;
+  margin: 2% auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  #proposTable2 {
+    width: 100%;
+  }
+}
+
+.labelBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelBtns a {
+  text-decoration: none;
+  color: black;
+}
+
+.btnFrm {
+  width: 100%;
+  margin: 2%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.colorRed {
+  background: rgba(255, 0, 0, 0.466);
+}
+
+.colorRed:hover {
+  background: red;
+}
+
+.colorBlue {
+  background: rgba(85, 85, 243, 0.479);
+}
+
+.colorBlue:hover {
+  background: #5555f3;
+}
+
+.btnFrm:hover {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  background: #86afec;
+  margin-top: 0;
+}
+
+.navbar ul {
+  width: 40%;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .navbar ul {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .navbar ul {
+    width: 90%;
+  }
+}
+
+.navbar ul il {
+  margin: 0% 3%;
+}
+
+.navbar ul il a {
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .navbar ul il a {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .navbar ul il a {
+    font-size: 3vw;
+  }
+}
+
+.navbar ul il a:hover {
+  text-decoration: underline;
+}
+.blocForgot {
+  width: 100%;
+  height: 100%;
+  margin-top: 12%;
+}
+
+.textCenter {
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .textCenter {
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .textCenter {
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .textCenter {
+    font-size: 4vw;
+    padding: 1% 2%;
+  }
+}
+
+.forgot-form {
+  width: 50%;
+  margin: 3% auto;
+  padding-bottom: 3%;
+  background: #f3f6ef;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .forgot-form {
+    width: 90%;
+  }
+}
+
+.formForgot {
+  width: 70%;
+  margin: 0 auto;
+  padding: 8% 0% 0%;
+}
+
+.formForgot__group {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.formForgot__groupe {
+  text-align: center;
+  margin: 2%;
+}
+
+.form-Control {
+  width: 100%;
+  font-size: 14px;
+  height: 5vh;
+  margin-bottom: 3%;
+  padding-left: 1%;
+}
+
+.btnSend {
+  width: 40%;
+  margin: auto;
+  padding: 2% 3%;
+  background: #4672AB;
+  color: #ebe5e5;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnSend:hover {
+  background: #3071c7;
+  color: white;
+}
+
+.mytextCenter {
+  width: 100%;
+  text-align: center;
+}
+.waiting {
+  width: 20%;
+  margin: 8% auto;
+}
+
+.waiting__illimg {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

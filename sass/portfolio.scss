@@ -1,0 +1,235 @@
+.sectionPortfolio {
+    width: 100%;
+    margin-top: 8%;
+    padding-bottom: 6%;
+
+    &__title {
+        text-align: center;
+        color: #DCC5DB;
+
+    }
+}
+
+.blocproject {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    @media screen and(min-width:1000px) and (max-width:1300px) {
+        width: 80%;
+        
+    }
+    @media screen and(min-width:660px) and (max-width:999px) {
+        width: 90%;
+        
+    }
+    @media screen and(min-width:320px) and (max-width:659px) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.myGrid {
+    width: 100%;
+    margin: 5% auto;
+    color: #DCC5DB;
+}
+
+.imgProjet {
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    @media screen and(min-width:320px) and (max-width:659px) {
+        width: 90%;
+        text-align: center;
+        padding-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    &__image {
+        width: 60%;
+        
+    }
+}
+
+.informationProjet {
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    @media screen and(min-width:320px) and (max-width:659px) {
+        width: 90%;
+        margin-bottom: 4%;
+    }
+    
+
+    &__titleSite {
+        cursor: pointer;
+        @media screen and(min-width:1000px) and (max-width:1300px) {
+            font-size: 2.9vw;
+        }
+        @media screen and(min-width:660px) and (max-width:999px) {
+            font-size: 3.2vw;
+            
+        }
+        @media screen and(min-width:430px) and (max-width:659px) {
+            font-size: 3.8vw;
+            
+        }
+        @media screen and(min-width:320px) and (max-width:429px) {
+            font-size: 4.4vw;
+            
+        }
+        
+
+    }
+
+    &__titleSite a {
+        text-decoration: none;
+        color: #DCC5DB;
+    }
+
+    &__titleSite a:hover {
+
+        color: #4672AB;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1pt;
+        margin-top: 3%;
+        @media screen and(min-width:1000px) and (max-width:1300px) {
+            font-size: 1.6vw;
+           
+        }
+        @media screen and(min-width:660px) and (max-width:999px) {
+            font-size: 2.2vw;
+            
+        }
+        @media screen and(min-width:430px) and (max-width:659px) {
+            font-size: 3vw;
+            
+        }
+        @media screen and(min-width:320px) and (max-width:429px) {
+            font-size: 3.8vw;
+            
+        }
+        
+    }
+
+}
+// -----------------------** footer **------------------------
+.myfooter {
+    width: 100%;
+    height: 15vw;
+    margin: 0;
+    padding: 0;
+    background: rgba(24, 23, 23, 0.404);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: #DCC5DB;
+    align-items: center;
+    @media screen and(min-width:770px) and (max-width:1300px) {
+       
+        height: 25vw;
+        
+    }
+    @media screen and(min-width:660px) and (max-width:769px) {
+       
+        height: 35vw;
+        
+    }
+
+    @media screen and(min-width:480px) and (max-width:659px) {
+        flex-direction: column;
+        height: 60vw;
+        justify-content: center;
+    }
+    @media screen and(min-width:320px) and (max-width:479px) {
+        flex-direction: column;
+        height: 76vw;
+        justify-content: center;
+
+    }
+    
+    &__footerContact {
+        width: 30%;
+        @media screen and(min-width:320px) and (max-width:659px) {
+            width: 80%;
+            margin-bottom: 3%;
+        }
+        
+        
+    }
+    &__footerContact ul li{
+        list-style: none;
+        padding: 1%;
+    }
+
+    &__footerMedia {
+        width: 30%;
+        @media screen and(min-width:320px) and (max-width:659px) {
+            width: 80%;
+        }
+    }
+    &__footerMedia ul li {
+        padding: 4%;
+        list-style: none;
+        
+    }
+    .titleContactList{
+        @media screen and(min-width:320px) and (max-width:479px) {
+            font-size: 5vw;
+             
+         }
+    }
+    ul li .listContact{
+        &__paraContact{
+            margin-left: 3%;
+            @media screen and(min-width:320px) and (max-width:479px) {
+                font-size: 4vw;
+                 
+             }
+        }
+        @media screen and(min-width:320px) and (max-width:659px) {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        @media screen and(min-width:320px) and (max-width:479px) {
+            font-size: 4.3vw;
+             
+         }
+
+    }
+    &__mediaIcon{
+        width: 10%;
+        margin: 4% 4% 4% 0%;
+        cursor: pointer;
+    }
+    &__mediaIcon:hover{
+        transition: transform 1s;
+        width: 14%;
+        height: auto;
+    }
+}
+.footercopyright{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}

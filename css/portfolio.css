@@ -1,2 +1,277 @@
+.sectionPortfolio {
+  width: 100%;
+  margin-top: 8%;
+  padding-bottom: 6%;
+}
+
+.sectionPortfolio__title {
+  text-align: center;
+  color: #DCC5DB;
+}
+
+.blocproject {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .blocproject {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .blocproject {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .blocproject {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.myGrid {
+  width: 100%;
+  margin: 5% auto;
+  color: #DCC5DB;
+}
+
+.imgProjet {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .imgProjet {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 3%;
+  }
+}
+
+.imgProjet__image {
+  width: 60%;
+}
+
+.informationProjet {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .informationProjet {
+    width: 90%;
+    margin-bottom: 4%;
+  }
+}
+
+.informationProjet__titleSite {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .informationProjet__titleSite {
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .informationProjet__titleSite {
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 659px) {
+  .informationProjet__titleSite {
+    font-size: 3.8vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  .informationProjet__titleSite {
+    font-size: 4.4vw;
+  }
+}
+
+.informationProjet__titleSite a {
+  text-decoration: none;
+  color: #DCC5DB;
+}
+
+.informationProjet__titleSite a:hover {
+  color: #4672AB;
+}
+
+.informationProjet__description {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1pt;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .informationProjet__description {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .informationProjet__description {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 659px) {
+  .informationProjet__description {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  .informationProjet__description {
+    font-size: 3.8vw;
+  }
+}
+
+.myfooter {
+  width: 100%;
+  height: 15vw;
+  margin: 0;
+  padding: 0;
+  background: rgba(24, 23, 23, 0.404);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: #DCC5DB;
+  align-items: center;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1300px) {
+  .myfooter {
+    height: 25vw;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 769px) {
+  .myfooter {
+    height: 35vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 659px) {
+  .myfooter {
+    flex-direction: column;
+    height: 60vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter {
+    flex-direction: column;
+    height: 76vw;
+    justify-content: center;
+  }
+}
+
+.myfooter__footerContact {
+  width: 30%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter__footerContact {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+}
+
+.myfooter__footerContact ul li {
+  list-style: none;
+  padding: 1%;
+}
+
+.myfooter__footerMedia {
+  width: 30%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter__footerMedia {
+    width: 80%;
+  }
+}
+
+.myfooter__footerMedia ul li {
+  padding: 4%;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter .titleContactList {
+    font-size: 5vw;
+  }
+}
+
+.myfooter ul li .listContact__paraContact {
+  margin-left: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter ul li .listContact__paraContact {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .myfooter ul li .listContact {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .myfooter ul li .listContact {
+    font-size: 4.3vw;
+  }
+}
+
+.myfooter__mediaIcon {
+  width: 10%;
+  margin: 4% 4% 4% 0%;
+  cursor: pointer;
+}
+
+.myfooter__mediaIcon:hover {
+  transition: transform 1s;
+  width: 14%;
+  height: auto;
+}
+
+.footercopyright {
+  width: 100%;
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
 
 /*# sourceMappingURL=portfolio.css.map */

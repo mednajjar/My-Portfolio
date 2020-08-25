@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "toCSS": "node-sass --output-style expanded --source-map=true sass -o css",
-    "concat": "concat --output=css/style.css css/accueil.css css/portfolio.css css/admin.css css/contact.css css/propos.css css/login.css",
+    "concat": "concat --output=css/style.css css/accueil.css css/portfolio.css css/admin.css css/contact.css css/propos.css css/login.css css/dashboard.css css/portfoliopage.css css/propospage.css css/forgot.css css/mailbox.css",
     "toPrefixed": "postcss css/style.css --use=autoprefixer --map=false --output=css/style.css",
     "toMinified": "cleancss --level=1 --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
     "watch": "npm run toCSS -- --watch",
