@@ -195,7 +195,7 @@ ul li .active {
 
 .blocHeader__titleHeader {
   grid-area: A;
-  color: #4672AB;
+  color: #E8D7E7;
   letter-spacing: 1.1pt;
 }
 
@@ -215,6 +215,10 @@ ul li .active {
   .blocHeader__titleHeader {
     font-size: 3.8vw;
   }
+}
+
+.blocHeader #myTitle {
+  animation: slide_up 2s ease;
 }
 
 .blocHeader__paraHeader {
@@ -281,16 +285,12 @@ ul li .active {
   }
 }
 
+.blocHeader #para {
+  animation: slide_up 2.3s ease;
+}
+
 .blocHeader__TextHeader {
   text-align: center;
-}
-
-span {
-  transition: all 2s ease;
-}
-
-span.fade {
-  color: #F9F4F4;
 }
 
 .blocBtn {
@@ -370,6 +370,7 @@ span.fade {
   color: #4672AB;
   cursor: pointer;
   align-self: center;
+  animation: slide_right 2.8s ease;
 }
 
 @media screen and (max-width: 1015px) {
@@ -407,6 +408,7 @@ span.fade {
   color: #707070;
   cursor: pointer;
   align-self: center;
+  animation: slide_left 2.8s ease;
 }
 
 @media screen and (max-width: 1015px) {
@@ -430,6 +432,39 @@ span.fade {
 .blocBtn__Btn2:hover {
   background: #707070;
   color: #DCC5DB;
+}
+
+@keyframes slide_up {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */

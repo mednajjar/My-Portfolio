@@ -56,7 +56,7 @@ include 'config.php';
                 <img class='imgProjet__image' src='$port_img' alt='image'>
             </div>
             <div class='informationProjet'>
-                <h1 class='informationProjet__titleSite'><a href='$port_url'>$port_title</a></h1>
+                <h1 class='informationProjet__titleSite'><a href='$port_url' target='_blank'>$port_title</a></h1>
                 <p class='informationProjet__description'>$port_desc</p>
             </div>
             </div>";

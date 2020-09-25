@@ -37,7 +37,7 @@
             <h1 id="myTitle" class="blocHeader__titleHeader">Bonjour, je suis MOHAMMED NAJJAR,</h1>
         </div>
         <div class="blocHeader__paraHeader">
-            <p class="blocHeader__paragraph" id="para"></p>
+            <p class="blocHeader__paragraph" id="para">et je suis un auto-entrepreneur travailler sur des projets de clients dans certaines agences numériques marocaines et des clients individuels. J'ai un ensemble diversifié de compétences, allant de la conception, au html et css, javascript et php, wordpress et prestashop.</p>
         </div>
 
         <div class="blocBtn">

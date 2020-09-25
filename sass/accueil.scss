@@ -209,8 +209,9 @@ ul li .active {
 
     &__titleHeader {
         grid-area: A;
-        color: #4672AB;
+        color: #E8D7E7;
         letter-spacing: 1.1pt;
+
 
         @media screen and(max-width:875px) {
             font-size: 2.5vw;
@@ -226,6 +227,10 @@ ul li .active {
             font-size: 3.8vw;
         }
 
+    }
+
+    #myTitle {
+        animation: slide_up 2s ease;
     }
 
     &__paraHeader {
@@ -283,6 +288,10 @@ ul li .active {
         }
     }
 
+    #para {
+        animation: slide_up 2.3s ease;
+    }
+
     &__TextHeader {
 
         text-align: center;
@@ -291,13 +300,13 @@ ul li .active {
     }
 }
 
-span {
-    transition: all 2s ease;
-}
+// span {
+//     transition: all 2s ease;
+// }
 
-span.fade {
-    color: #F9F4F4;
-}
+// span.fade {
+//     color: #F9F4F4;
+// }
 
 .blocBtn {
     grid-area: C;
@@ -306,7 +315,9 @@ span.fade {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-   
+
+
+
 
     @media screen and(max-width:1300px) {
         margin-top: 3%;
@@ -362,6 +373,8 @@ span.fade {
         color: #4672AB;
         cursor: pointer;
         align-self: center;
+        animation: slide_right 2.8s ease;
+
 
         @media screen and(max-width:1015px) {
             font-size: 2vw;
@@ -395,6 +408,7 @@ span.fade {
         color: #707070;
         cursor: pointer;
         align-self: center;
+        animation: slide_left 2.8s ease;
 
         @media screen and(max-width:1015px) {
             font-size: 2vw;
@@ -413,5 +427,41 @@ span.fade {
     &__Btn2:hover {
         background: #707070;
         color: #DCC5DB;
+    }
+}
+
+@keyframes slide_up {
+    0% {
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide_left {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

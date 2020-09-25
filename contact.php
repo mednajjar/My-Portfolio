@@ -37,7 +37,7 @@
                             <td style='width:400px'>$email</td>
                         </tr>
                         <tr>
-                            <td style='width:150px'><strong>Mobile No: </strong></td>
+                            <td style='width:150px'><strong>Subject : </strong></td>
                             <td style='width:400px'>$sujet</td>
                         </tr>
                         <tr>
@@ -63,13 +63,18 @@
          
         if(mail($to,$subject,$message,$headers)&& !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
             // Message if mail has been sent
-            echo $send ='votre message à été envoyé, je vous répondrais dans meilleur délais, merci.';
+            // echo $send ='votre message à été envoyé, je vous répondrais dans meilleur délais, merci.';
+            echo"<script>alert('votre message à été envoyé, je vous répondrais dans meilleur délais, merci.')</script>";
+            header("location: ./contact.php");
+            echo "<meta http-equiv='refresh' content='0'>";
+           
               
         }
  
         else{
             // Message if mail has been not sent
-            echo $notsent='votre message n\'a pas été envoyé veuillez réessayer!';
+            // echo $notsent='votre message n\'a pas été envoyé veuillez réessayer!';
+            echo"<script>alert('votre message n\'a pas été envoyé veuillez réessayer!')</script>";
               
         }
        
@@ -118,8 +123,8 @@
             <h1 class="sectionContact__title">Contact us</h1>
             
         </div>
-        <p class="contactForm__alertmsg alertMsg"><?php if(isset($send)) echo $send; ?></p>
-        <p class="contactForm__alertmsg alertMsg"><?php if(isset($notsent)) echo $notsent; ?></p>
+        <!-- <p class="contactForm__alertmsg alertMsg"><?php if(isset($send)) echo $send; ?></p>
+        <p class="contactForm__alertmsg alertMsg"><?php if(isset($notsent)) echo $notsent; ?></p> -->
 
         <div class="formContact">
             <form class="contactForm" action="contact.php" method="POST">
@@ -179,7 +184,7 @@
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

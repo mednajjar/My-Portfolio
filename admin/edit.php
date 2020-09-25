@@ -20,7 +20,7 @@ if(isset($_POST['update'])){
     if(isset($_POST['title']) && isset($_POST['descr'])){
         $title = $_POST['title'];
         $desc = $_POST['descr'];           
-                $stmt = $db->prepare("UPDATE propos SET pro_title = :title, pro_desc= :descr WHERE pro_id=:id");
+                $stmt = $db->prepare("UPDATE propos SET pro_title = :title, pro_desc= :descr WHERE pro_id=:id AND admin_id=1");
                 $stmt -> execute(array(
                         'id'=>"$id",
                         'title'=>"$title",

@@ -52,6 +52,7 @@
 
     &__image {
         width: 60%;
+        animation: slide_right 2.8s ease;
         
     }
 }
@@ -62,6 +63,7 @@
     align-self: center;
     text-align: center;
     padding: 0;
+    animation: slide_left 2.8s ease;
     @media screen and(min-width:320px) and (max-width:659px) {
         width: 90%;
         margin-bottom: 4%;

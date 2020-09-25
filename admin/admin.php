@@ -1,11 +1,13 @@
 <?php
 session_start();
 include '../config.php';
-$er="";
+
+
 if(isset($_POST['login'])){
    $email = htmlspecialchars($_POST['email']) ;
    $pass = htmlspecialchars($_POST['password']);
-    $query = $db->query("SELECT * FROM admin WHERE admin_email='$email' AND admin_pass='$pass' ");
+   $hash = sha1($pass);
+    $query = $db->query("SELECT * FROM admin WHERE admin_email='$email' AND admin_pass='$hash' ");
         if($query->rowCount() > 0){
                 
                 $_SESSION['admin_email']=$email;
@@ -34,7 +36,7 @@ if(isset($_POST['login'])){
 <body>
         
             <div class="login-form">
-                <form class="formGroup" action="" method="post">
+                <form class="formGroup" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                     <h2 class="text-center">Admin</h2>       
                     <div class="form-group">
                         <input type="email" class="form-control" name="email" placeholder="Email" required="required">

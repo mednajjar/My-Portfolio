@@ -26,7 +26,7 @@ if(isset($_POST['Add'])){
 
     if(!empty($_POST['title']) && !empty($_POST['desc'])){
                     
-                $stmt = $db->prepare("INSERT INTO propos (pro_title, pro_desc) VALUES (:pro_title, :pro_desc)");
+                $stmt = $db->prepare("INSERT INTO propos (admin_id, pro_title, pro_desc) VALUES ('1', :pro_title, :pro_desc)");
                 $stmt -> execute(array(
                         'pro_title'=>"$title",
                         'pro_desc'=>"$desc"

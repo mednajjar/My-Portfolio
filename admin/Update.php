@@ -16,7 +16,7 @@ if(isset($_POST['Update'])){
         $title = $_POST['title'];
         $url = $_POST['myurl'];
         $desc = $_POST['descr'];           
-                $stmt = $db->prepare("UPDATE portfolio SET port_img = :image, port_title = :title, port_url = :myurl, port_desc= :descr WHERE port_id=:id");
+                $stmt = $db->prepare("UPDATE portfolio SET port_img = :image, port_title = :title, port_url = :myurl, port_desc= :descr WHERE port_id=:id AND admin_id=1");
                 $stmt -> execute(array(
                         'id'=>"$id",
                         'image'=>"$image",
